@@ -46,13 +46,16 @@ if (($handle = fopen("data/patients.csv", "r")) !== FALSE) {
     <title>クラスタの可視化</title>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
-<body>
+  <body>
+    <h1>愛知県のクラスタ可視化</h1>
+    created by <a href="https://sawanolab.aitech.ac.jp" target="_blank">H. Sawano</a><br>
+    出典: <a href="https://www.pref.aichi.jp/site/covid19-aichi/kansensya-kensa.html" target="_blank">愛知県新型コロナウイルス感染症対策サイト</a>
 <style type="text/css">
 
 </style>
 <script type="text/javascript">
-    var width = 800;
-    var height = 800;
+    var width = 700;
+    var height = 700;
     // nodeの定義。ここを増やすと楽しい。
     var nodes = [
         <?php
